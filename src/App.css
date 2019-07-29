@@ -1,33 +1,218 @@
-.App {
-  text-align: center;
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+
+.cn-wrapper {
+	font-size: 2em;
+	width: 52em;
+	height: 52.5em;
+	overflow: hidden;
+	position: fixed;
+	z-index: 10;
+	bottom: -39em;
+	left: 50%;
+	border-radius: 50%;
+	margin-left: -26em;
+	-webkit-transform: scale(0.1);
+	transform: scale(0.1);
+	pointer-events: none;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.opened-nav {
+	border-radius: 50%;
+	pointer-events: auto;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cn-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	z-index: 2;
 }
 
-.App-link {
-  color: #61dafb;
+.cn-overlay.on-overlay {
+	visibility: visible;
+	opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cn-button {
+	outline:none;
+	border: none;
+	background: none;
+	color: #f06060;
+	text-align: center;
+	font-size: 3.15em;
+	padding-bottom: 1.75em;
+	height: 6.125em;
+	width: 6.125em;
+	background-color: #fff;
+	position: fixed;
+	left: 50%;
+	margin-left: -3.0625em;
+	bottom: -3.0625em;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 11;
+}
+
+.cn-button:hover,
+.cn-button:active,
+.cn-button:focus {
+	color: #aa1010;
+}
+
+.cn-wrapper li {
+	position: absolute;
+	font-size: 1.5em;
+	width: 10em;
+	height: 10em;
+	-webkit-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	overflow: hidden;
+	left: 50%;
+	top: 50%;
+	margin-top: -1.3em;
+	margin-left: -10em;
+	-webkit-transition: border 0.3s ease;
+	transition: border 0.3s ease;
+}
+
+.cn-wrapper li a {
+	display: block;
+	font-size: 1.18em;
+	height: 14.5em;
+	width: 14.5em;
+	position: absolute;
+	bottom: -7.25em;
+	right: -7.25em;
+	border-radius: 50%;
+	text-decoration: none;
+	color: #fff;
+	padding-top: 0.3em;
+	text-align: center;
+	-webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+	csstransformstransform: skew(-50deg) rotate(-70deg) scale(1);
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: opacity 0.3s, color 0.3s;
+	transition: opacity 0.3s, color 0.3s;
+}
+
+#blogs {
+	display: inline-block;
+	-webkit-transform: rotate(80deg) translateX(1em);
+	        transform: rotate(80deg) translateX(1em);
+}
+
+#skills {
+	display: inline-block;
+	-webkit-transform: rotate(40deg) translate(0.5em, 0.5em);
+	        transform: rotate(40deg) translate(0.5em, 0.5em);
+}
+
+#projects {
+	display: inline-block;
+	-webkit-transform: rotate(-40deg) translate(-0.5em, 0.5em);
+	        transform: rotate(-40deg) translate(-0.4em, 0.5em);
+}
+#contact {
+	display: inline-block;
+	-webkit-transform: rotate(-80deg) translateX(-1.2em);
+	        transform: rotate(-80deg) translateX(-1.2em);
+}
+
+.cn-wrapper li a:first-child {
+	/* margin-right: 2em; */
+}
+
+/* for a central angle x, the list items must be skewed by 90-x degrees
+in our case x=40deg so skew angle is 50deg
+items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+
+.cn-wrapper li:first-child {
+	-webkit-transform: rotate(-10deg) skew(50deg);
+	transform: rotate(-10deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(2) {
+	-webkit-transform: rotate(30deg) skew(50deg);
+	transform: rotate(30deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(3) {
+	-webkit-transform: rotate(70deg) skew(50deg);
+	transform: rotate(70deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(4) {
+	-webkit-transform: rotate(110deg) skew(50deg);
+	transform: rotate(110deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(5) {
+	-webkit-transform: rotate(150deg) skew(50deg);
+	transform: rotate(150deg) skew(50deg);
+}
+
+.cn-wrapper li:nth-child(odd) a {
+	background-color: #a11313;
+	background-color: hsla(0, 88%, 63%, 1);
+}
+
+.cn-wrapper li:nth-child(even) a {
+	background-color: #a61414;
+	background-color: hsla(0, 88%, 65%, 1);
+}
+
+/* active style */
+.cn-wrapper li.active a {
+	background-color: #b31515;
+	background-color: hsla(0, 88%, 70%, 1);
+}
+
+/* hover style */
+.cn-wrapper li:not(.active) a:hover,
+.cn-wrapper li:not(.active) a:active,
+.cn-wrapper li:not(.active) a:focus {
+	background-color: #b31515;
+	background-color: hsla(0, 88%, 70%, 1);
+}
+.cn-wrapper li:not(.active) a:focus {
+	position: fixed;
+}
+
+@media screen and (max-width: 480px) {
+	.cn-wrapper {
+		font-size: 0.68em;
+	}
+
+	.cn-button {
+		font-size: 1em;
+	}
+
+	.cn-wrapper li {
+		font-size: 1.52em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.cn-wrapper {
+		width: 15.15px;
+		margin-left: -7.5em;
+	}
+
+	.cn-wrapper li {
+		height: 3em;
+		width: 3em;
+	}
 }

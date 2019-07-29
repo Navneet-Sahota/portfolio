@@ -1,26 +1,76 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./App.css";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
+import About from "./components/About";
+import ContactMe from "./components/ContactMe";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [open, setOpen] = useState(false);
+	const [display, setDisplay] = useState(null);
+
+	return (
+		<>
+			<Container fixed>
+			<button
+				className="cn-button"
+				id="cn-button"
+				onClick={() => {
+					if (!open) {
+						setOpen(true);
+					} else {
+						setOpen(false);
+					}
+				}}
+			>
+				{open ? "-" : "+"}
+			</button>
+			<div className={`cn-wrapper ${open ? "opened-nav" : ""}`} id="cn-wrapper">
+				<ul>
+					<li>
+						<a href="#">
+							<span id='blogs'>Blogs</span>
+						</a>
+					</li>
+					<li onClick={() => setDisplay('skills')}>
+						<a href="#">
+							<span id='skills'>Skills</span>
+						</a>
+					</li>
+					<li onClick={() => setDisplay('about')}>
+						<a href="#">
+								<span id='about'>About</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span id='projects'>Projects</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span id='contact'>Contact</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div
+				className={`cn-overlay ${open ? "on-overlay" : ""}`}
+				id="cn-overlay"
+			/>
+			{display === 'about' ? <About /> : null }
+			{display === 'skills' ? <Skills /> : null }
+			{/* <Projects /> */}
+			{/* <ContactMe /> */}
+			</Container>
+		</>
+	);
 }
 
 export default App;
