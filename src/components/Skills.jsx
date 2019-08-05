@@ -8,6 +8,7 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		flexGrow: 1,
 		paddingTop: "5vh",
+		rowGap: "20px",
 	},
 }));
 
@@ -26,10 +27,11 @@ function Skills() {
 			>
 				Skills
 			</Typography>
-			<Grid container className={classes.root}>
-				<Grid item xs={12}>
+			{/* <Grid container className={classes.root}>
+				<Grid item xs={12}> */}
 					<Grid
 						container
+						className={classes.root}
 						direction="row"
 						justify="space-between"
 						alignItems="flex-start"
@@ -42,8 +44,8 @@ function Skills() {
 							</Grid>
 						))}
 					</Grid>
-				</Grid>
-			</Grid>
+				{/* </Grid>
+			</Grid> */}
 		</>
 	);
 }

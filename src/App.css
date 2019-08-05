@@ -1,5 +1,19 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
 
+#open {
+	font-size: 2em;
+	color: whitesmoke;
+	position: relative;
+	top: -10px;
+}
+
+#open:hover,
+#open:active,
+#open:focus {
+	position: relative;
+	top: -10px;
+}
+
 .cn-wrapper {
 	font-size: 2em;
 	width: 52em;
@@ -47,16 +61,13 @@
 }
 
 .cn-button {
-	outline:none;
+	outline: none;
 	border: none;
-	background: none;
-	color: #f06060;
 	text-align: center;
 	font-size: 3.15em;
 	padding-bottom: 1.75em;
 	height: 6.125em;
 	width: 6.125em;
-	background-color: #fff;
 	position: fixed;
 	left: 50%;
 	margin-left: -3.0625em;
@@ -64,12 +75,15 @@
 	border-radius: 50%;
 	cursor: pointer;
 	z-index: 11;
+	background-color: #8583ce;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
-.cn-button:hover,
-.cn-button:active,
-.cn-button:focus {
-	color: #aa1010;
+.cn-button:hover {
+	background-color: #8583ce;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .cn-wrapper li {
@@ -111,24 +125,24 @@
 #blogs {
 	display: inline-block;
 	-webkit-transform: rotate(80deg) translateX(1em);
-	        transform: rotate(80deg) translateX(1em);
+	transform: rotate(80deg) translateX(1em);
 }
 
 #skills {
 	display: inline-block;
 	-webkit-transform: rotate(40deg) translate(0.5em, 0.5em);
-	        transform: rotate(40deg) translate(0.5em, 0.5em);
+	transform: rotate(40deg) translate(0.5em, 0.5em);
 }
 
 #projects {
 	display: inline-block;
 	-webkit-transform: rotate(-40deg) translate(-0.5em, 0.5em);
-	        transform: rotate(-40deg) translate(-0.4em, 0.5em);
+	transform: rotate(-40deg) translate(-0.4em, 0.5em);
 }
 #contact {
 	display: inline-block;
 	-webkit-transform: rotate(-80deg) translateX(-1.2em);
-	        transform: rotate(-80deg) translateX(-1.2em);
+	transform: rotate(-80deg) translateX(-1.2em);
 }
 
 .cn-wrapper li a:first-child {
@@ -165,27 +179,24 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 }
 
 .cn-wrapper li:nth-child(odd) a {
-	background-color: #a11313;
-	background-color: hsla(0, 88%, 63%, 1);
+	background-color: #3121a7;
 }
 
 .cn-wrapper li:nth-child(even) a {
-	background-color: #a61414;
-	background-color: hsla(0, 88%, 65%, 1);
+	background-color: #3b28cc;
 }
 
 /* active style */
 .cn-wrapper li.active a {
-	background-color: #b31515;
-	background-color: hsla(0, 88%, 70%, 1);
+	background-color: #3625ba;
 }
 
 /* hover style */
 .cn-wrapper li:not(.active) a:hover,
 .cn-wrapper li:not(.active) a:active,
 .cn-wrapper li:not(.active) a:focus {
-	background-color: #b31515;
-	background-color: hsla(0, 88%, 70%, 1);
+	background-color: #7370ca;
+	border: 2px solid black;
 }
 .cn-wrapper li:not(.active) a:focus {
 	position: fixed;

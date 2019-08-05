@@ -8,19 +8,20 @@ import Typography from "@material-ui/core/Typography";
 const styles = makeStyles({
 	card: {
 		border: "1px solid black",
-		maxWidth: 200,
+		maxWidth: 350,
+		minHeight: 600,
 		marginBottom: "10vh",
 	},
 });
 
-function SkillCard() {
+function ProjectCard() {
 	const classes = styles();
 	return (
 		<Card className={classes.card} onClick={() => console.log("react")}>
 			<CardMedia
 				component="img"
-				alt="React"
-				height="100"
+				alt="Project"
+				height="200"
 				image="https://reactjs.org/logo-og.png"
 				title="React"
 			/>
@@ -37,4 +38,4 @@ function SkillCard() {
 	// }
 }
 
-export default SkillCard;
+export default ProjectCard;
