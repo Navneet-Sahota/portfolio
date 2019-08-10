@@ -6,10 +6,10 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
-import About from "./components/About";
-import ContactMe from "./components/ContactMe";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import About from "./view/About";
+import ContactMe from "./view/ContactMe";
+import Skills from "./view/Skills";
+import Projects from "./view/Projects";
 
 function App() {
 	const [open, setOpen] = useState(false);
@@ -18,50 +18,84 @@ function App() {
 	return (
 		<>
 			<Container fixed>
-				<button
+				<div
 					className="cn-button"
 					id="cn-button"
-					onClick={() => {
+					onMouseOver={() => {
 						if (!open) {
 							setOpen(true);
-						} else {
-							setOpen(false);
 						}
 					}}
-				>
-					<strong id="open" style={open ? { color: "#ab050b" } : null}>
-						{open ? "-" : "+"}
-					</strong>
-				</button>
+				/>
 				<div
 					className={`cn-wrapper ${open ? "opened-nav" : ""}`}
 					id="cn-wrapper"
 				>
 					<ul>
 						<li>
-							<a href="#">
+							<div onMouseOver={() => {
+								if (!open) {
+									setOpen(true);
+								}
+							}} onMouseLeave={() => {
+								if (open) {
+									setOpen(false);
+								}
+							}}>
 								<span id="blogs">Blogs</span>
-							</a>
+							</div>
 						</li>
 						<li onClick={() => setDisplay("skills")}>
-							<a href="#">
+							<div onMouseOver={() => {
+								if (!open) {
+									setOpen(true);
+								}
+							}} onMouseLeave={() => {
+								if (open) {
+									setOpen(false);
+								}
+							}}>
 								<span id="skills">Skills</span>
-							</a>
+							</div>
 						</li>
 						<li onClick={() => setDisplay("about")}>
-							<a href="#">
+							<div onMouseOver={() => {
+								if (!open) {
+									setOpen(true);
+								}
+							}} onMouseLeave={() => {
+								if (open) {
+									setOpen(false);
+								}
+							}}>
 								<span id="about">About</span>
-							</a>
+							</div>
 						</li>
 						<li onClick={() => setDisplay("projects")}>
-							<a href="#">
+							<div onMouseOver={() => {
+								if (!open) {
+									setOpen(true);
+								}
+							}} onMouseLeave={() => {
+								if (open) {
+									setOpen(false);
+								}
+							}}>
 								<span id="projects">Projects</span>
-							</a>
+							</div>
 						</li>
 						<li>
-							<a href="#">
+							<div onMouseOver={() => {
+								if (!open) {
+									setOpen(true);
+								}
+							}} onMouseLeave={() => {
+								if (open) {
+									setOpen(false);
+								}
+							}}>
 								<span id="contact">Contact</span>
-							</a>
+							</div>
 						</li>
 					</ul>
 				</div>
