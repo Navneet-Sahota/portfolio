@@ -8,7 +8,7 @@ import {
 	email,
 	twitter,
 	phone,
-} from "../assets/img/contact";
+} from "../../assets/img/contact";
 
 class ContactMe extends React.Component {
 	constructor(props) {

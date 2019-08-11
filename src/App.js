@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import About from "./view/About";
-import ContactMe from "./view/ContactMe";
+import ContactMe from "./view/Contact/ContactMe";
 import Skills from "./view/Skills/Skills";
 import Projects from "./view/Projects";
 import home from "./assets/img/home.svg";
