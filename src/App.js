@@ -1,99 +1,151 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
 import About from "./view/About";
 import ContactMe from "./view/ContactMe";
-import Skills from "./view/Skills";
+import Skills from "./view/Skills/Skills";
 import Projects from "./view/Projects";
+import home from "./assets/img/home.svg";
 
 function App() {
 	const [open, setOpen] = useState(false);
-	const [display, setDisplay] = useState(null);
+	const [display, setDisplay] = useState("home");
 
 	return (
 		<>
 			<Container fixed>
 				<div
-					className="cn-button"
-					id="cn-button"
+					className="cn-home"
+					id="cn-home"
 					onMouseOver={() => {
 						if (!open) {
 							setOpen(true);
 						}
 					}}
-				/>
+				>
+					{display !== "home" ? (
+						<img
+							src={home}
+							alt="Home"
+							style={{
+								height: "33.3%",
+								position: "relative",
+								top: "17.5%",
+								transform: "translateY(-17.5%)",
+							}}
+						/>
+					) : null}
+				</div>
 				<div
 					className={`cn-wrapper ${open ? "opened-nav" : ""}`}
 					id="cn-wrapper"
 				>
 					<ul>
-						<li>
-							<div onMouseOver={() => {
-								if (!open) {
-									setOpen(true);
-								}
-							}} onMouseLeave={() => {
-								if (open) {
-									setOpen(false);
-								}
-							}}>
+						<li
+							onClick={() => {
+								setDisplay("blogs");
+								setOpen(false);
+							}}
+						>
+							<div
+								onMouseOver={() => {
+									if (!open) {
+										setOpen(true);
+									}
+								}}
+								onMouseLeave={() => {
+									if (open) {
+										setOpen(false);
+									}
+								}}
+							>
 								<span id="blogs">Blogs</span>
 							</div>
 						</li>
-						<li onClick={() => setDisplay("skills")}>
-							<div onMouseOver={() => {
-								if (!open) {
-									setOpen(true);
-								}
-							}} onMouseLeave={() => {
-								if (open) {
-									setOpen(false);
-								}
-							}}>
+						<li
+							onClick={() => {
+								setDisplay("skills");
+								setOpen(false);
+							}}
+						>
+							<div
+								onMouseOver={() => {
+									if (!open) {
+										setOpen(true);
+									}
+								}}
+								onMouseLeave={() => {
+									if (open) {
+										setOpen(false);
+									}
+								}}
+							>
 								<span id="skills">Skills</span>
 							</div>
 						</li>
-						<li onClick={() => setDisplay("about")}>
-							<div onMouseOver={() => {
-								if (!open) {
-									setOpen(true);
-								}
-							}} onMouseLeave={() => {
-								if (open) {
-									setOpen(false);
-								}
-							}}>
+						<li
+							onClick={() => {
+								setDisplay("about");
+								setOpen(false);
+							}}
+						>
+							<div
+								onMouseOver={() => {
+									if (!open) {
+										setOpen(true);
+									}
+								}}
+								onMouseLeave={() => {
+									if (open) {
+										setOpen(false);
+									}
+								}}
+							>
 								<span id="about">About</span>
 							</div>
 						</li>
-						<li onClick={() => setDisplay("projects")}>
-							<div onMouseOver={() => {
-								if (!open) {
-									setOpen(true);
-								}
-							}} onMouseLeave={() => {
-								if (open) {
-									setOpen(false);
-								}
-							}}>
+						<li
+							onClick={() => {
+								setDisplay("projects");
+								setOpen(false);
+							}}
+						>
+							<div
+								onMouseOver={() => {
+									if (!open) {
+										setOpen(true);
+									}
+								}}
+								onMouseLeave={() => {
+									if (open) {
+										setOpen(false);
+									}
+								}}
+							>
 								<span id="projects">Projects</span>
 							</div>
 						</li>
-						<li>
-							<div onMouseOver={() => {
-								if (!open) {
-									setOpen(true);
-								}
-							}} onMouseLeave={() => {
-								if (open) {
-									setOpen(false);
-								}
-							}}>
+						<li
+							onClick={() => {
+								setDisplay("contact");
+								setOpen(false);
+							}}
+						>
+							<div
+								onMouseOver={() => {
+									if (!open) {
+										setOpen(true);
+									}
+								}}
+								onMouseLeave={() => {
+									if (open) {
+										setOpen(false);
+									}
+								}}
+							>
 								<span id="contact">Contact</span>
 							</div>
 						</li>
@@ -106,7 +158,7 @@ function App() {
 				{display === "about" ? <About /> : null}
 				{display === "skills" ? <Skills /> : null}
 				{display === "projects" ? <Projects /> : null}
-				{/* <ContactMe /> */}
+				{display === "contact" ? <ContactMe /> : null}
 			</Container>
 		</>
 	);

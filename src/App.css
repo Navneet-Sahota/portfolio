@@ -60,12 +60,11 @@
 	opacity: 1;
 }
 
-.cn-button {
+.cn-home {
 	outline: none;
 	border: none;
 	text-align: center;
 	font-size: 3.15em;
-	padding-bottom: 1.75em;
 	height: 6.125em;
 	width: 6.125em;
 	position: fixed;
@@ -80,7 +79,7 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.cn-button:hover {
+.cn-home:hover {
 	background-color: #8583ce;
 }
 
@@ -203,7 +202,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 		font-size: 0.68em;
 	}
 
-	.cn-button {
+	.cn-home {
 		font-size: 1em;
 	}
 
