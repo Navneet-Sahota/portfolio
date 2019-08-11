@@ -1,16 +1,14 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 
-import SkillCard from "../../components/SkillCard";
+import SkillCard from "../../components/SkillCard/SkillCard";
+import Header from "../../components/Header/Header";
 import { skills } from "./index.js";
 import "./index.css";
 
 const Skills = () => {
 	return (
 		<>
-			<Typography className="title" variant="h3">
-				Skills
-			</Typography>
+			<Header title="Skills" />
 			<div className="skill-container">
 				{skills.map(skill => (
 					<SkillCard

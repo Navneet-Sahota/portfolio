@@ -1,4 +1,4 @@
-.skill-container {
+.project-container {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -8,5 +8,17 @@
 	justify-content: space-around;
 	-ms-flex-line-pack: distribute;
 	align-content: space-around;
-	padding-top: 2.5vh;
+	padding-top: 10vh;
+}
+
+@media screen and (max-width: 640px) {
+	.project-container {
+		padding-top: 7.5vh;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.project-container {
+		padding-top: 5vh;
+	}
 }

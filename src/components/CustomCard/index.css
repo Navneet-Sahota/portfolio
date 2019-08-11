@@ -5,11 +5,28 @@
 	box-shadow: 2px 2px 16px 8px rgba(0, 0, 0, 0.4) !important;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	max-width: 220px;
-	min-height: 250px;
 	margin-bottom: 10vh;
 	-webkit-transition: all 0.2s ease-in-out !important;
 	transition: all 0.2s ease-in-out !important;
+}
+
+.stack {
+	margin-bottom: 2vh !important;
+	color: black !important;
+	font-size: 1.6em !important;
+}
+
+.skill {
+	max-width: 220px;
+	min-height: 250px;
+}
+
+.project {
+	max-width: 300px;
+	min-height: 400px;
+}
+
+.blog {
 }
 
 .card:hover {

@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
 import About from "./view/About";
 import ContactMe from "./view/Contact/ContactMe";
 import Skills from "./view/Skills/Skills";
-import Projects from "./view/Projects";
+import Projects from "./view/Projects/Projects";
 import home from "./assets/img/home.svg";
 
 function App() {

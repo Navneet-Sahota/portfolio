@@ -33,7 +33,7 @@ const skills = [
 		image: redux,
 	},
 	{
-		name: "webpack",
+		name: "Webpack",
 		desc: "A static module bundler for modern JavaScript applications",
 		image: webpack,
 	},
@@ -53,7 +53,7 @@ const skills = [
 		image: mongo,
 	},
 	{
-		name: "mysql",
+		name: "MySQL",
 		desc: "An open-source relational Database management system",
 		image: mysql,
 	},

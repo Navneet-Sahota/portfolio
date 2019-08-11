@@ -1,13 +1,4 @@
-.title {
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	text-align: center;
-	font-family: inherit !important;
-	-webkit-text-decoration: underline black solid;
-	text-decoration: underline black solid;
-}
-
-.container {
+.contact-container {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
