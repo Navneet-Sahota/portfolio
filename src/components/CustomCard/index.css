@@ -27,6 +27,8 @@
 }
 
 .blog {
+	max-width: 275px;
+	min-height: 400px;
 }
 
 .card:hover {

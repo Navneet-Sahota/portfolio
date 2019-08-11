@@ -6,6 +6,7 @@ import ContactMe from "./view/Contact/ContactMe";
 import Skills from "./view/Skills/Skills";
 import Projects from "./view/Projects/Projects";
 import home from "./assets/img/home.svg";
+import Blogs from "./view/Blogs/Blogs";
 
 function App() {
 	const [open, setOpen] = useState(false);
@@ -152,6 +153,7 @@ function App() {
 					className={`cn-overlay ${open ? "on-overlay" : ""}`}
 					id="cn-overlay"
 				/>
+				{display === "blogs" ? <Blogs /> : null}
 				{display === "about" ? <About /> : null}
 				{display === "skills" ? <Skills /> : null}
 				{display === "projects" ? <Projects /> : null}

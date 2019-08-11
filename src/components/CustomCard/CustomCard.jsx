@@ -25,7 +25,7 @@ const CustomCard = props => {
 					component="h3"
 				>
 					<strong>
-						{props.cardType === "project" ? (
+						{props.cardType !== "skill" ? (
 							<Link href={props.href} target="_blank" rel="noreferrer">
 								{props.name}
 							</Link>
