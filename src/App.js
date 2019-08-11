@@ -1,16 +1,35 @@
 import React, { useState } from "react";
-import "./App.css";
 import Container from "@material-ui/core/Container";
-import About from "./view/About";
+
+import Experience from "./view/Experience/Experience";
 import ContactMe from "./view/Contact/ContactMe";
 import Skills from "./view/Skills/Skills";
 import Projects from "./view/Projects/Projects";
-import home from "./assets/img/home.svg";
 import Blogs from "./view/Blogs/Blogs";
+import home from "./assets/img/home.svg";
+import MenuOption from "./components/MenuOption";
+import "./App.css";
 
 function App() {
 	const [open, setOpen] = useState(false);
 	const [display, setDisplay] = useState("home");
+
+	const changeMenu = menu => {
+		setDisplay(menu);
+		setOpen(false);
+	};
+
+	const onMouseEnter = () => {
+		if (!open) {
+			setOpen(true);
+		}
+	};
+
+	const onMouseExit = () => {
+		if (open) {
+			setOpen(false);
+		}
+	};
 
 	return (
 		<>
@@ -42,111 +61,41 @@ function App() {
 					id="cn-wrapper"
 				>
 					<ul>
-						<li
-							onClick={() => {
-								setDisplay("blogs");
-								setOpen(false);
-							}}
-						>
-							<div
-								onMouseOver={() => {
-									if (!open) {
-										setOpen(true);
-									}
-								}}
-								onMouseLeave={() => {
-									if (open) {
-										setOpen(false);
-									}
-								}}
-							>
-								<span id="blogs">Blogs</span>
-							</div>
-						</li>
-						<li
-							onClick={() => {
-								setDisplay("skills");
-								setOpen(false);
-							}}
-						>
-							<div
-								onMouseOver={() => {
-									if (!open) {
-										setOpen(true);
-									}
-								}}
-								onMouseLeave={() => {
-									if (open) {
-										setOpen(false);
-									}
-								}}
-							>
-								<span id="skills">Skills</span>
-							</div>
-						</li>
-						<li
-							onClick={() => {
-								setDisplay("about");
-								setOpen(false);
-							}}
-						>
-							<div
-								onMouseOver={() => {
-									if (!open) {
-										setOpen(true);
-									}
-								}}
-								onMouseLeave={() => {
-									if (open) {
-										setOpen(false);
-									}
-								}}
-							>
-								<span id="about">About</span>
-							</div>
-						</li>
-						<li
-							onClick={() => {
-								setDisplay("projects");
-								setOpen(false);
-							}}
-						>
-							<div
-								onMouseOver={() => {
-									if (!open) {
-										setOpen(true);
-									}
-								}}
-								onMouseLeave={() => {
-									if (open) {
-										setOpen(false);
-									}
-								}}
-							>
-								<span id="projects">Projects</span>
-							</div>
-						</li>
-						<li
-							onClick={() => {
-								setDisplay("contact");
-								setOpen(false);
-							}}
-						>
-							<div
-								onMouseOver={() => {
-									if (!open) {
-										setOpen(true);
-									}
-								}}
-								onMouseLeave={() => {
-									if (open) {
-										setOpen(false);
-									}
-								}}
-							>
-								<span id="contact">Contact</span>
-							</div>
-						</li>
+						<MenuOption
+							id="blogs"
+							name="Blogs"
+							onClick={() => changeMenu("blogs")}
+							onMouseOver={onMouseEnter}
+							onMouseLeave={onMouseExit}
+						/>
+						<MenuOption
+							id="skills"
+							name="Skills"
+							onClick={() => changeMenu("skills")}
+							onMouseOver={onMouseEnter}
+							onMouseLeave={onMouseExit}
+						/>
+						<MenuOption
+							id="projects"
+							name="Projects"
+							onClick={() => changeMenu("projects")}
+							onMouseOver={onMouseEnter}
+							onMouseLeave={onMouseExit}
+						/>
+						<MenuOption
+							id="experience"
+							name="Experience"
+							onClick={() => changeMenu("experience")}
+							onMouseOver={onMouseEnter}
+							onMouseLeave={onMouseExit}
+						/>
+						<MenuOption
+							id="contact"
+							name="Contact"
+							onClick={() => changeMenu("contact")}
+							onMouseOver={onMouseEnter}
+							onMouseLeave={onMouseExit}
+						/>
 					</ul>
 				</div>
 				<div
@@ -154,7 +103,7 @@ function App() {
 					id="cn-overlay"
 				/>
 				{display === "blogs" ? <Blogs /> : null}
-				{display === "about" ? <About /> : null}
+				{display === "experience" ? <Experience /> : null}
 				{display === "skills" ? <Skills /> : null}
 				{display === "projects" ? <Projects /> : null}
 				{display === "contact" ? <ContactMe /> : null}

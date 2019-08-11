@@ -1,0 +1,24 @@
+.link {
+	color: greenyellow !important;
+}
+
+.work-title {
+	padding-top: 5vh;
+	font-family: inherit !important;
+}
+
+@media screen and (max-width: 640px) {
+	.work-title {
+		padding-top: 5vh;
+		font-family: inherit !important;
+		font-size: 3em !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.work-title {
+		padding-top: 5vh;
+		font-family: inherit !important;
+		font-size: 2.5em !important;
+	}
+}

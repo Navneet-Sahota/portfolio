@@ -114,8 +114,9 @@
 	padding-top: 0.3em;
 	text-align: center;
 	-webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
-	csstransformstransform: skew(-50deg) rotate(-70deg) scale(1);
+	transform: skew(-50deg) rotate(-70deg) scale(1);
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	-webkit-transition: opacity 0.3s, color 0.3s;
 	transition: opacity 0.3s, color 0.3s;
 }
@@ -132,7 +133,7 @@
 	transform: rotate(40deg) translate(0.5em, 0.5em);
 }
 
-#projects {
+#experience {
 	display: inline-block;
 	-webkit-transform: rotate(-40deg) translate(-0.5em, 0.5em);
 	transform: rotate(-40deg) translate(-0.4em, 0.5em);
