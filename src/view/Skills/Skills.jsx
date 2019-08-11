@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 import SkillCard from "../../components/SkillCard";
@@ -12,7 +11,7 @@ const Skills = () => {
 			<Typography className="title" variant="h3">
 				Skills
 			</Typography>
-			<div className="container">
+			<div className="skill-container">
 				{skills.map(skill => (
 					<SkillCard
 						key={skill.name}

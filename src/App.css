@@ -211,7 +211,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 310px) {
 	.cn-wrapper {
 		width: 15.15px;
 		margin-left: -7.5em;
