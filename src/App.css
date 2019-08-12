@@ -67,6 +67,10 @@
 	background-color: #8583ce;
 }
 
+.pointer {
+	cursor: pointer !important;
+}
+
 .cn-wrapper li {
 	position: absolute;
 	font-size: 1.5em;
@@ -106,24 +110,33 @@
 }
 
 #blogs {
+	font-size: 0.75em;
 	display: inline-block;
 	-webkit-transform: rotate(80deg) translateX(1em);
 	transform: rotate(80deg) translateX(1em);
 }
 
 #skills {
+	font-size: 0.75em;
 	display: inline-block;
 	-webkit-transform: rotate(40deg) translate(0.5em, 0.5em);
 	transform: rotate(40deg) translate(0.5em, 0.5em);
 }
 
+#projects {
+	font-size: 0.75em;
+	display: inline-block;
+}
+
 #experience {
+	font-size: 0.75em;
 	display: inline-block;
 	-webkit-transform: rotate(-40deg) translate(-0.5em, 0.5em);
 	transform: rotate(-40deg) translate(-0.4em, 0.5em);
 }
 
 #contact {
+	font-size: 0.75em;
 	display: inline-block;
 	-webkit-transform: rotate(-80deg) translateX(-1.2em);
 	transform: rotate(-80deg) translateX(-1.2em);

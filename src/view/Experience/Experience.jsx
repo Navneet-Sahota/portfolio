@@ -15,12 +15,22 @@ const Experience = () => {
 				duration="July 2018 - June 2019"
 			/>
 			<ul className="work">
-				<li>Build dashboard showing different graphs using React.</li>
-				<li>Added workflow to existing project.</li>
-				<li>Added features to the mobile app using React Native.</li>
-				<li>Build Survey tool for Intra-department surveys.</li>
 				<li>
-					Build the MVP which got 2nd price in Maruti Suzuki MAIL program.
+					<span>Build dashboard showing different graphs using React.</span>
+				</li>
+				<li>
+					<span>Added workflow to existing project.</span>
+				</li>
+				<li>
+					<span>Added features to the mobile app using React Native.</span>
+				</li>
+				<li>
+					<span>Build Survey tool for Intra-department surveys.</span>
+				</li>
+				<li>
+					<span>
+						Build the MVP which got 2nd price in Maruti Suzuki MAIL program.
+					</span>
 				</li>
 			</ul>
 			<WorkExTitle

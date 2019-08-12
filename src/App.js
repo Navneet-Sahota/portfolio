@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import Container from "@material-ui/core/Container";
 
-import Experience from "./view/Experience/Experience";
-import ContactMe from "./view/Contact/ContactMe";
+import Home from "./view/Home/Home";
+import Blogs from "./view/Blogs/Blogs";
 import Skills from "./view/Skills/Skills";
 import Projects from "./view/Projects/Projects";
-import Blogs from "./view/Blogs/Blogs";
+import Experience from "./view/Experience/Experience";
+import ContactMe from "./view/Contact/ContactMe";
 import home from "./assets/img/home.svg";
 import MenuOption from "./components/MenuOption";
 import "./App.css";
 
-function App() {
+const App = () => {
 	const [open, setOpen] = useState(false);
 	const [display, setDisplay] = useState("home");
 
@@ -31,17 +32,20 @@ function App() {
 		}
 	};
 
+	const backToHome = () => {
+		if (display !== "home") {
+			setDisplay("home");
+		}
+	};
+
 	return (
 		<>
 			<Container fixed>
 				<div
-					className="cn-home"
+					className={`cn-home ${display === "home" ? "pointer" : ""}`}
 					id="cn-home"
-					onMouseOver={() => {
-						if (!open) {
-							setOpen(true);
-						}
-					}}
+					onMouseOver={onMouseEnter}
+					onClick={backToHome}
 				>
 					{display !== "home" ? (
 						<img
@@ -102,6 +106,7 @@ function App() {
 					className={`cn-overlay ${open ? "on-overlay" : ""}`}
 					id="cn-overlay"
 				/>
+				{display === "home" ? <Home /> : null}
 				{display === "blogs" ? <Blogs /> : null}
 				{display === "experience" ? <Experience /> : null}
 				{display === "skills" ? <Skills /> : null}
@@ -110,6 +115,6 @@ function App() {
 			</Container>
 		</>
 	);
-}
+};
 
 export default App;
