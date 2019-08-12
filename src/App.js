@@ -14,6 +14,7 @@ import "./App.css";
 const App = () => {
 	const [open, setOpen] = useState(false);
 	const [display, setDisplay] = useState("home");
+	const mobileDevices = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/;
 
 	const changeMenu = menu => {
 		setDisplay(menu);
@@ -21,19 +22,21 @@ const App = () => {
 	};
 
 	const onMouseEnter = () => {
-		if (!open) {
+		if (!open && !mobileDevices.test(navigator.userAgent)) {
 			setOpen(true);
 		}
 	};
 
 	const onMouseExit = () => {
-		if (open) {
+		if (open && !mobileDevices.test(navigator.userAgent)) {
 			setOpen(false);
 		}
 	};
 
 	const backToHome = () => {
-		if (display !== "home" && open) {
+		if (mobileDevices.test(navigator.userAgent)) {
+			setOpen(open => !open);
+		} else if (display !== "home" && open) {
 			setDisplay("home");
 		}
 	};
@@ -47,7 +50,9 @@ const App = () => {
 					onMouseOver={onMouseEnter}
 					onClick={backToHome}
 				>
-					{display !== "home" && open ? (
+					{display !== "home" &&
+					open &&
+					!mobileDevices.test(navigator.userAgent) ? (
 						<img
 							src={home}
 							alt="Home"
