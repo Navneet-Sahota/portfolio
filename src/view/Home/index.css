@@ -9,7 +9,7 @@
 
 .intro-text {
 	font-family: inherit !important;
-	font-size: 5em;
+	font-size: 5em !important;
 	padding-top: 3vh;
 }
 
@@ -49,12 +49,24 @@
 
 @media screen and (max-width: 640px) {
 	.intro-text {
-		font-size: 3em;
+		font-size: 4em !important;
+	}
+	#arrow {
+		width: 3em;
+		position: fixed;
+		bottom: 8em;
+		margin-left: -1.5em;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.intro-text {
-		font-size: 2em;
+		font-size: 3em !important;
+	}
+	#arrow {
+		width: 2.5em;
+		position: fixed;
+		bottom: 6em;
+		margin-left: -1.25em;
 	}
 }
