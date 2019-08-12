@@ -33,7 +33,7 @@ const App = () => {
 	};
 
 	const backToHome = () => {
-		if (display !== "home") {
+		if (display !== "home" && open) {
 			setDisplay("home");
 		}
 	};
@@ -47,7 +47,7 @@ const App = () => {
 					onMouseOver={onMouseEnter}
 					onClick={backToHome}
 				>
-					{display !== "home" ? (
+					{display !== "home" && open ? (
 						<img
 							src={home}
 							alt="Home"

@@ -68,7 +68,7 @@
 }
 
 .pointer {
-	cursor: pointer !important;
+	cursor: auto !important;
 }
 
 .cn-wrapper li {
