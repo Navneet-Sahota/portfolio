@@ -45,7 +45,7 @@ const App = () => {
 		<>
 			<Container fixed>
 				<div
-					className={`cn-home ${display === "home" ? "pointer" : ""}`}
+          className={`cn-home${display === "home" ? " pointer" : ""}${display !== "home" || open ? " cn-home-no-ripple" : ""}`}
 					id="cn-home"
 					onMouseOver={onMouseEnter}
 					onClick={backToHome}
@@ -66,7 +66,7 @@ const App = () => {
 					) : null}
 				</div>
 				<div
-					className={`cn-wrapper ${open ? "opened-nav" : ""}`}
+					className={`cn-wrapper${open ? " opened-nav" : ""}`}
 					id="cn-wrapper"
 				>
 					<ul>
@@ -108,7 +108,7 @@ const App = () => {
 					</ul>
 				</div>
 				<div
-					className={`cn-overlay ${open ? "on-overlay" : ""}`}
+					className={`cn-overlay${open ? " on-overlay" : ""}`}
 					id="cn-overlay"
 				/>
 				{display === "home" ? <Home /> : null}
