@@ -4,7 +4,6 @@ import {
 	linkedIn,
 	email,
 	twitter,
-	phone,
 } from "../../assets/img/contact";
 
 const contacts = [
@@ -27,11 +26,6 @@ const contacts = [
 		name: "GitHub",
 		href: "https://github.com/Navneet-Sahota",
 		image: github,
-	},
-	{
-		name: "Phone Number",
-		href: "tel:+918467022668",
-		image: phone,
 	},
 	{
 		name: "Email",

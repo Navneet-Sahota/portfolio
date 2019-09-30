@@ -14,7 +14,6 @@ const Skills = () => {
 					<SkillCard
 						key={skill.name}
 						name={skill.name}
-						description={skill.desc}
 						image={skill.image}
 					/>
 				))}
