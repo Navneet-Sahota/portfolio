@@ -10,8 +10,9 @@ const Blogs = () => {
 		<>
 			<Header title="Blogs" />
 			<div className="blog-container">
-				{blogs.map(blog => (
+				{blogs.map((blog, index) => (
 					<BlogCard
+						even={index % 2 === 0}
 						key={blog.name}
 						name={blog.name}
 						description={blog.desc}

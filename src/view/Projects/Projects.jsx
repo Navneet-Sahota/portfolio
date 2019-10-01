@@ -10,8 +10,9 @@ const Projects = () => {
 		<>
 			<Header title="Projects" />
 			<div className="project-container">
-				{projects.map(project => (
+				{projects.map((project, index) => (
 					<ProjectCard
+						even={index % 2 === 0}
 						key={project.name}
 						stack={project.stack}
 						href={project.href}

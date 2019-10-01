@@ -8,7 +8,7 @@ import "./index.css";
 
 const CustomCard = props => {
 	return (
-		<Card className={`card ${props.cardType}`}>
+		<Card className={`card ${props.cardType} ${props.even ? "even" : "odd"}`}>
 			<CardMedia
 				component="img"
 				alt={props.name}
