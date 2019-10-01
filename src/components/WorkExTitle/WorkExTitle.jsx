@@ -8,13 +8,20 @@ const WorkExTitle = props => {
 	return (
 		<Typography
 			className="work-title"
-			style={{ paddingBottom: props.jobTitle ? "5vh" : "10vh" }}
-			variant="h4"
+			style={{ paddingBottom: "2.5vh" }}
+			variant="h3"
 		>
-			{props.jobTitle ? props.jobTitle + " " : null}
-			<Link className="link" href={props.href} target="_blank" rel="noreferrer">
-				{props.company}
-			</Link>{" "}
+			<strong>
+				{props.jobTitle ? props.jobTitle + " " : null}
+				<Link
+					className="link"
+					href={props.href}
+					target="_blank"
+					rel="noreferrer"
+				>
+					{props.company}
+				</Link>
+			</strong>{" "}
 			({props.duration})
 		</Typography>
 	);

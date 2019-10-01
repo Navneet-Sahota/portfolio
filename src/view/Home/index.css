@@ -1,18 +1,19 @@
 .intro-box {
 	position: fixed;
 	width: 80%;
-	padding-left: 10%;
+	padding: 0 5%;
 	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	top: 42.5%;
+	-webkit-transform: translate(-50%, -42.5%);
+	transform: translate(-50%, -42.5%);
 }
 
 .intro-text {
 	font-family: inherit !important;
 	font-size: 7em !important;
-	font-weight: 800;
-	padding-top: 3vh;
+	color: white;
+	font-weight: 700;
+	padding-top: 7vh;
 }
 
 #arrow {

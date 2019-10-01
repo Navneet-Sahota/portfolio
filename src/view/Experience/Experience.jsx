@@ -9,35 +9,190 @@ const Experience = () => {
 		<>
 			<Header title="Experience" />
 			<WorkExTitle
-				jobTitle="Frontend Lead at"
-				company="Xane AI"
-				href="https://xane.ai"
-				duration="July 2018 - June 2019"
+				jobTitle="Open Source Contributor at"
+				company="Uber/deck.gl"
+				href="https://deck.gl/"
+				duration="Sep 2019 - Oct 2019"
 			/>
 			<ul className="work">
 				<li>
-					<span>Build dashboard showing different graphs using React.</span>
-				</li>
-				<li>
-					<span>Added workflow to existing project.</span>
-				</li>
-				<li>
-					<span>Added features to the mobile app using React Native.</span>
-				</li>
-				<li>
-					<span>Build Survey tool for Intra-department surveys.</span>
+					<span>
+						Implemented{" "}
+						<a
+							href="https://github.com/uber/deck.gl/pull/3609"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Integrate Quantile and Ordinal scaling
+						</a>
+						,{" "}
+						<a
+							href="https://github.com/uber/deck.gl/pull/3677"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Fly to Transition auto support
+						</a>{" "}
+						and{" "}
+						<a
+							href="https://github.com/uber/deck.gl/pull/3546"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Add support for quantile and ordinal scale
+						</a>{" "}
+						features.
+					</span>
 				</li>
 				<li>
 					<span>
-						Build the MVP which got 2nd price in Maruti Suzuki MAIL program.
+						Implemented{" "}
+						<span
+							style={{
+								backgroundColor: "yellow",
+								color: "black",
+								fontStyle: "italic",
+							}}
+						>
+							bug fixes, doc changes & enhancement.
+						</span>{" "}
+						View all contributions{" "}
+						<a
+							href="https://github.com/uber/deck.gl/issues?utf8=%E2%9C%93&q=assignee%3ANavneet-Sahota+"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							here
+						</a>
+						.
 					</span>
 				</li>
 			</ul>
 			<WorkExTitle
-				company="Pesto Bootcamp"
+				company="Pesto Career Accelerator"
 				href="https://www.pesto.tech"
-				duration="July 2019 - Present"
+				duration="Jul 2019 - Present"
 			/>
+			<ul className="work">
+				<li>
+					<span>
+						Learned web development best practices and skills required for
+						remote work.
+					</span>
+				</li>
+				<li>
+					<span>
+						Built a{" "}
+						<a
+							href="https://posto.netlify.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							markdown blogging application
+						</a>
+						.
+					</span>
+				</li>
+			</ul>
+			<WorkExTitle
+				jobTitle="Frontend Lead at"
+				company="Xane AI"
+				href="https://xane.ai"
+				duration="Jul 2018 - Jun 2019"
+			/>
+			<ul className="work">
+				<li>
+					<span>
+						Wrote{" "}
+						<span
+							style={{
+								backgroundColor: "yellow",
+								color: "black",
+								fontStyle: "italic",
+							}}
+						>
+							custom webpack configuration
+						</span>{" "}
+						which brought build size down by ~80%
+					</span>
+				</li>
+				<li>
+					<span>
+						Made an MVP app to scan, detect & provide voice & text based
+						information about different parts of a car for
+						<strong
+							style={{
+								backgroundColor: "yellow",
+								color: "black",
+								fontStyle: "italic",
+							}}
+						>
+							{" "}
+							Maruti Suzuki MAIL program (1st Runner-up).
+						</strong>
+					</span>
+				</li>
+				<li>
+					<span>
+						Made a{" "}
+						<span
+							style={{
+								backgroundColor: "yellow",
+								color: "black",
+								fontStyle: "italic",
+							}}
+						>
+							custom Typeform-like interface
+						</span>{" "}
+						to conduct intra-department surveys in UK, US, PH & India.
+					</span>
+				</li>
+				<li>
+					<span>
+						Made{" "}
+						<span
+							style={{
+								backgroundColor: "yellow",
+								color: "black",
+								fontStyle: "italic",
+							}}
+						>
+							custom dashboard
+						</span>{" "}
+						to track each employee’s sentiment, find and resolve issues as early
+						as possible.
+					</span>
+				</li>
+				<li>
+					<span>
+						<span
+							style={{
+								backgroundColor: "yellow",
+								color: "black",
+								fontStyle: "italic",
+							}}
+						>
+							Improved Company’s development environment
+						</span>{" "}
+						by setting up eslint, prettier, husky, and lint-staged.
+					</span>
+				</li>
+				<li>
+					<span>
+						Build{" "}
+						<span
+							style={{
+								backgroundColor: "yellow",
+								color: "black",
+								fontStyle: "italic",
+							}}
+						>
+							custom PPT Report generator.
+						</span>
+					</span>
+				</li>
+			</ul>
+			<div style={{ height: "10vh" }}></div>
 		</>
 	);
 };

@@ -1,11 +1,15 @@
 .link {
-	color: greenyellow !important;
+	text-decoration: underline !important;
+	color: #00ffff !important;
 }
 
 .work-title {
-	padding-top: 5vh;
-	padding-bottom: 5vh;
+	display: list-item;
+	list-style-type: disc;
 	font-family: inherit !important;
+	font-size: 2rem !important;
+	padding-top: 2.5vh;
+	padding-bottom: 1.5vh !important;
 }
 
 @media screen and (max-width: 640px) {

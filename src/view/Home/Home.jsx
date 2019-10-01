@@ -16,15 +16,15 @@ const Home = () => {
 				}}
 			>
 				<Typography className="intro-text" variant="h1">
-					Hi! My name is Navneet Singh.
+					Hi! My name is <strong>Navneet Singh Sahota</strong>.
 				</Typography>
 				<Typist.Delay ms={500} />
 				<Typography className="intro-text" variant="h1">
-					I'm a Frontend
+					I'm a <strong>Frontend</strong>
 					<Typist.Backspace count={8} delay={300} />
-					Backend
+					<strong>Backend</strong>
 					<Typist.Backspace count={7} delay={300} />
-					Full Stack Developer from India.
+					<strong>Full Stack Developer</strong> from India.
 				</Typography>
 			</Typist>
 		</>
