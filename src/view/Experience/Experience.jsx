@@ -19,6 +19,7 @@ const Experience = () => {
 					<span>
 						Implemented{" "}
 						<a
+							className="blueBox"
 							href="https://github.com/uber/deck.gl/pull/3609"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -27,6 +28,7 @@ const Experience = () => {
 						</a>
 						,{" "}
 						<a
+							className="blueBox"
 							href="https://github.com/uber/deck.gl/pull/3677"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -35,6 +37,7 @@ const Experience = () => {
 						</a>{" "}
 						and{" "}
 						<a
+							className="blueBox"
 							href="https://github.com/uber/deck.gl/pull/3546"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -47,17 +50,12 @@ const Experience = () => {
 				<li>
 					<span>
 						Implemented{" "}
-						<span
-							style={{
-								backgroundColor: "yellow",
-								color: "black",
-								fontStyle: "italic",
-							}}
-						>
+						<span className="yellowBox">
 							bug fixes, doc changes & enhancement.
 						</span>{" "}
 						View all contributions{" "}
 						<a
+							className="blueBox"
 							href="https://github.com/uber/deck.gl/issues?utf8=%E2%9C%93&q=assignee%3ANavneet-Sahota+"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -84,6 +82,7 @@ const Experience = () => {
 					<span>
 						Built a{" "}
 						<a
+							className="blueBox"
 							href="https://posto.netlify.com/"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -104,30 +103,15 @@ const Experience = () => {
 				<li>
 					<span>
 						Wrote{" "}
-						<span
-							style={{
-								backgroundColor: "yellow",
-								color: "black",
-								fontStyle: "italic",
-							}}
-						>
-							custom webpack configuration
-						</span>{" "}
+						<span className="yellowBox">custom webpack configuration</span>{" "}
 						which brought build size down by ~80%
 					</span>
 				</li>
 				<li>
 					<span>
 						Made an MVP app to scan, detect & provide voice & text based
-						information about different parts of a car for
-						<strong
-							style={{
-								backgroundColor: "yellow",
-								color: "black",
-								fontStyle: "italic",
-							}}
-						>
-							{" "}
+						information about different parts of a car for{" "}
+						<strong className="yellowBox">
 							Maruti Suzuki MAIL program (1st Runner-up).
 						</strong>
 					</span>
@@ -135,43 +119,20 @@ const Experience = () => {
 				<li>
 					<span>
 						Made a{" "}
-						<span
-							style={{
-								backgroundColor: "yellow",
-								color: "black",
-								fontStyle: "italic",
-							}}
-						>
-							custom Typeform-like interface
-						</span>{" "}
-						to conduct intra-department surveys in UK, US, PH & India.
+						<span className="yellowBox">custom Typeform-like interface</span> to
+						conduct intra-department surveys in UK, US, PH & India.
 					</span>
 				</li>
 				<li>
 					<span>
-						Made{" "}
-						<span
-							style={{
-								backgroundColor: "yellow",
-								color: "black",
-								fontStyle: "italic",
-							}}
-						>
-							custom dashboard
-						</span>{" "}
-						to track each employee’s sentiment, find and resolve issues as early
-						as possible.
+						Made <span className="yellowBox">custom dashboard</span> to track
+						each employee’s sentiment, find and resolve issues as early as
+						possible.
 					</span>
 				</li>
 				<li>
 					<span>
-						<span
-							style={{
-								backgroundColor: "yellow",
-								color: "black",
-								fontStyle: "italic",
-							}}
-						>
+						<span className="yellowBox">
 							Improved Company’s development environment
 						</span>{" "}
 						by setting up eslint, prettier, husky, and lint-staged.
@@ -180,15 +141,7 @@ const Experience = () => {
 				<li>
 					<span>
 						Build{" "}
-						<span
-							style={{
-								backgroundColor: "yellow",
-								color: "black",
-								fontStyle: "italic",
-							}}
-						>
-							custom PPT Report generator.
-						</span>
+						<span className="yellowBox">custom PPT Report generator.</span>
 					</span>
 				</li>
 			</ul>
