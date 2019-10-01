@@ -1,6 +1,7 @@
 .intro-box {
-	margin: auto;
 	position: fixed;
+	width: 80%;
+	padding-left: 10%;
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -9,7 +10,8 @@
 
 .intro-text {
 	font-family: inherit !important;
-	font-size: 5em !important;
+	font-size: 7em !important;
+	font-weight: 800;
 	padding-top: 3vh;
 }
 
@@ -49,7 +51,7 @@
 
 @media screen and (max-width: 640px) {
 	.intro-text {
-		font-size: 4em !important;
+		font-size: 5em !important;
 	}
 	#arrow {
 		width: 3em;
@@ -61,7 +63,7 @@
 
 @media screen and (max-width: 480px) {
 	.intro-text {
-		font-size: 3em !important;
+		font-size: 4em !important;
 	}
 	#arrow {
 		width: 2.5em;
