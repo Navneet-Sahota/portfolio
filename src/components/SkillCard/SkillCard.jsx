@@ -1,9 +1,7 @@
 import React from "react";
 
-import CustomCard from "../CustomCard/CustomCard";
+import CustomBubble from "../CustomBubble/CustomBubble";
 
-const SkillCard = props => (
-	<CustomCard cardType="skill" height={100} {...props} />
-);
+const SkillCard = props => <CustomBubble cardType="skill" {...props} />;
 
 export default SkillCard;

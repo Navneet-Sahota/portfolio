@@ -1,0 +1,17 @@
+.bubble {
+	border: 2px solid black;
+	border-radius: 50% !important;
+	margin: 0 1vw;
+	margin-bottom: 10vh;
+}
+
+.skill {
+	max-width: 200px;
+	min-height: 200px;
+}
+
+.bubble-image {
+	-o-object-fit: contain !important;
+	object-fit: contain !important;
+	height: 100%;
+}
