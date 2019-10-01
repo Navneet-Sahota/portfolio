@@ -2,6 +2,17 @@
 	text-decoration: underline !important;
 	font-size: 2.2rem !important;
 	color: #00ffff !important;
+	font-style: italic;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.link:hover {
+	background-color: #00ffff;
+	color: black !important;
+	font-style: italic;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .work-title {
@@ -9,7 +20,7 @@
 	list-style-type: disc;
 	font-family: inherit !important;
 	font-size: 2rem !important;
-	padding-top: 2.5vh;
+	padding: 1vh;
 	padding-bottom: 1.5vh !important;
 }
 
