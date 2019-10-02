@@ -29,7 +29,7 @@ const contacts = [
 	},
 	{
 		name: "Email",
-		href: "mailto:navneet.sahota@outlook.com",
+		href: "mailto:sahota.navneet04@gmail.com",
 		image: email,
 	},
 ];
