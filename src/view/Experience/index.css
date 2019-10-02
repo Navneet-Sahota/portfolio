@@ -5,7 +5,7 @@
 }
 
 .work-container {
-	background-color: rgba(0, 0, 0, 0.125);
+	background-color: rgba(255, 255, 255, 0.125);
 	border: 2px solid black;
 	border-radius: 20px;
 	margin-bottom: 2vh;
@@ -75,11 +75,6 @@
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
-}
-
-.yellowBox {
-	color: yellow;
-	font-style: italic;
 }
 
 .blueBox {

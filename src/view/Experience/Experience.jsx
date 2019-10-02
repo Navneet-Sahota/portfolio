@@ -104,46 +104,39 @@ const Experience = () => {
 				<ul className="work">
 					<li>
 						<span>
-							Wrote{" "}
-							<span className="yellowBox">custom webpack configuration</span>{" "}
-							which brought build size down by ~80%
+							Wrote <strong>custom webpack configuration</strong> which brought
+							down build size by ~70%
 						</span>
 					</li>
 					<li>
 						<span>
-							Made an MVP app to scan, detect & provide voice & text based
+							Built an MVP app to scan, detect & provide voice & text based
 							information about different parts of a car for{" "}
-							<strong className="yellowBox">
-								Maruti Suzuki MAIL program (1st Runner-up).
-							</strong>
+							<strong>Maruti Suzuki MAIL program (1st Runner-up).</strong>
 						</span>
 					</li>
 					<li>
 						<span>
-							Made a{" "}
-							<span className="yellowBox">custom Typeform-like interface</span>{" "}
-							to conduct intra-department surveys in UK, US, PH & India.
+							Built a <strong>custom Typeform-like interface</strong> to conduct
+							intra-department surveys in UK, US, PH & India.
 						</span>
 					</li>
 					<li>
 						<span>
-							Made <span className="yellowBox">custom dashboard</span> to track
+							Heavily contributed to <strong>custom dashboard</strong> to track
 							each employee’s sentiment, find and resolve issues as early as
 							possible.
 						</span>
 					</li>
 					<li>
 						<span>
-							<span className="yellowBox">
-								Improved Company’s development environment
-							</span>{" "}
-							by setting up eslint, prettier, husky, and lint-staged.
+							<strong>Improved Company’s development environment</strong> by
+							setting up eslint, prettier, husky, and lint-staged.
 						</span>
 					</li>
 					<li>
 						<span>
-							Build{" "}
-							<span className="yellowBox">custom PPT Report generator.</span>
+							Built <strong>custom PPT Report generator.</strong>
 						</span>
 					</li>
 				</ul>
