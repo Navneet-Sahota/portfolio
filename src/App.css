@@ -58,45 +58,41 @@
 	border-radius: 50%;
 	cursor: pointer;
 	z-index: 11;
-	background-color: #8583ce;
+	background-color: #00ffff;
 	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
-	-webkit-animation: ripple 0.5s linear infinite;
-	animation: ripple 0.5s linear infinite;
+	-webkit-animation: ripple 0.75s linear infinite;
+	animation: ripple 0.75s linear infinite;
 }
 
 @-webkit-keyframes ripple {
 	0% {
-		-webkit-box-shadow: 0 0 0 0 rgba(133, 131, 206, 0.5),
-			0 0 0 1em rgba(133, 131, 206, 0.5);
-		box-shadow: 0 0 0 0 rgba(133, 131, 206, 0.5),
-			0 0 0 1em rgba(133, 131, 206, 0.5);
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.5),
+			0 0 0 1em rgba(0, 255, 255, 0.5);
+		box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 1em rgba(0, 255, 255, 0.5);
 	}
 	100% {
-		-webkit-box-shadow: 0 0 0 1em rgba(133, 131, 206, 0.5),
-			0 0 0 3em rgba(133, 131, 206, 0);
-		box-shadow: 0 0 0 1em rgba(133, 131, 206, 0.5),
-			0 0 0 3em rgba(133, 131, 206, 0);
+		-webkit-box-shadow: 0 0 0 1em rgba(0, 255, 255, 0.5),
+			0 0 0 3em rgba(0, 255, 255, 0);
+		box-shadow: 0 0 0 1em rgba(0, 255, 255, 0.5), 0 0 0 3em rgba(0, 255, 255, 0);
 	}
 }
 
 @keyframes ripple {
 	0% {
-		-webkit-box-shadow: 0 0 0 0 rgba(133, 131, 206, 0.5),
-			0 0 0 1em rgba(133, 131, 206, 0.5);
-		box-shadow: 0 0 0 0 rgba(133, 131, 206, 0.5),
-			0 0 0 1em rgba(133, 131, 206, 0.5);
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.5),
+			0 0 0 1em rgba(0, 255, 255, 0.5);
+		box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 1em rgba(0, 255, 255, 0.5);
 	}
 	100% {
-		-webkit-box-shadow: 0 0 0 1em rgba(133, 131, 206, 0.5),
-			0 0 0 3em rgba(133, 131, 206, 0);
-		box-shadow: 0 0 0 1em rgba(133, 131, 206, 0.5),
-			0 0 0 3em rgba(133, 131, 206, 0);
+		-webkit-box-shadow: 0 0 0 1em rgba(0, 255, 255, 0.5),
+			0 0 0 3em rgba(0, 255, 255, 0);
+		box-shadow: 0 0 0 1em rgba(0, 255, 255, 0.5), 0 0 0 3em rgba(0, 255, 255, 0);
 	}
 }
 
 .cn-home:hover {
-	background-color: #8583ce;
+	background-color: #00ffff;
 	-webkit-animation: 0;
 	animation: 0;
 }
@@ -228,7 +224,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .cn-wrapper li:not(.active) div:active,
 .cn-wrapper li:not(.active) div:focus {
 	background-color: #7370ca;
-	border: 2px solid black;
+	border: 5px solid #00ffff;
 }
 .cn-wrapper li:not(.active) div:focus {
 	position: fixed;
