@@ -1,13 +1,13 @@
 import react from "./react.png";
-import git from "./git.png";
-import javascript from "./javascript.jpg";
-import htmlCSS from "./htmlCss.jpeg";
+import git from "./git.jpg";
+import javascript from "./javascript.png";
+import htmlCSS from "./htmlCss.jpg";
 import redux from "./redux.png";
-import node from "./node.png";
+import node from "./node.jpg";
 import express from "./express.jpeg";
 import mongo from "./mongo.png";
 import webpack from "./webpack.png";
-import mysql from "./mysql.png";
+import mysql from "./mysql.svg";
 
 export {
 	react,
