@@ -83,16 +83,12 @@
 .blueBox {
 	color: #3625ba;
 	font-style: italic;
-	padding-left: 16px;
-	padding-right: 16px;
 }
 
 .blueBox:hover {
 	background-color: #3625ba;
 	color: white;
 	font-style: italic;
-	padding-left: 16px;
-	padding-right: 16px;
 }
 
 .work > li {

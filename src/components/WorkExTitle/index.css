@@ -3,16 +3,12 @@
 	font-size: 2.2rem !important;
 	color: #3625ba !important;
 	font-style: italic;
-	padding-left: 16px;
-	padding-right: 16px;
 }
 
 .link:hover {
 	background-color: #3625ba;
 	color: white !important;
 	font-style: italic;
-	padding-left: 16px;
-	padding-right: 16px;
 }
 
 .work-title {
