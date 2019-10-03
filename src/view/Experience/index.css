@@ -97,8 +97,8 @@
 
 .work > li {
 	margin-top: 8px;
-	line-height: 1.2;
-	list-style-type: square;
+	line-height: 1.25;
+	list-style-type: disc;
 }
 
 .work > li:first-child {

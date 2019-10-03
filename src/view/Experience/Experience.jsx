@@ -57,8 +57,14 @@ const Experience = () => {
 						<span>
 							Implemented various other bug fixes, docs changes, enhancements
 							and helped create specs for future development via Github Issues.
-							<ul className="work" style={{ fontSize: "1em" }}>
-								<li>
+							<ul
+								className="work"
+								style={{
+									fontSize: "1em",
+									paddingTop: "10px",
+								}}
+							>
+								<li style={{ listStyleType: "circle" }}>
 									<a
 										className="blueBox"
 										href="https://github.com/uber/deck.gl/issues?utf8=✓&q=assignee%3ANavneet-Sahota+"
