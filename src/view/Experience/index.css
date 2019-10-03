@@ -5,10 +5,13 @@
 }
 
 .work-container {
-	background-color: rgba(255, 255, 255, 0.125);
+	background-color: white;
 	border: 2px solid black;
 	border-radius: 20px;
 	margin-bottom: 2vh;
+	padding: 10px 15px;
+	-webkit-box-shadow: 2px 2px 16px 8px rgba(0, 0, 0, 0.4) !important;
+	box-shadow: 2px 2px 16px 8px rgba(0, 0, 0, 0.4) !important;
 }
 
 .even-work {
@@ -78,15 +81,15 @@
 }
 
 .blueBox {
-	color: #00ffff;
+	color: #3625ba;
 	font-style: italic;
 	padding-left: 16px;
 	padding-right: 16px;
 }
 
 .blueBox:hover {
-	background-color: #00ffff;
-	color: black;
+	background-color: #3625ba;
+	color: white;
 	font-style: italic;
 	padding-left: 16px;
 	padding-right: 16px;

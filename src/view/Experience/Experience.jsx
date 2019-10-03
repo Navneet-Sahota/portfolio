@@ -18,83 +18,62 @@ const Experience = () => {
 				<ul className="work">
 					<li>
 						<span>
-							Implemented{" "}
+							Added support for quantile and ordinal scaling (
 							<a
+								href="https://github.com/uber/deck.gl/pull/3546"
 								className="blueBox"
-								href="https://github.com/uber/deck.gl/pull/3609"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Integrate Quantile and Ordinal scaling
+								#3546
 							</a>
 							,{" "}
+							<a
+								href="https://github.com/uber/deck.gl/pull/3609"
+								className="blueBox"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								#3609
+							</a>
+							).
+						</span>
+					</li>
+					<li>
+						<span>
+							Added ‘auto’ support for smooth “fly to” transitions (
 							<a
 								className="blueBox"
 								href="https://github.com/uber/deck.gl/pull/3677"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Fly to Transition auto support
-							</a>{" "}
-							and{" "}
-							<a
-								className="blueBox"
-								href="https://github.com/uber/deck.gl/pull/3546"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Add support for quantile and ordinal scale
-							</a>{" "}
-							features.
+								#3677
+							</a>
+							) .
 						</span>
 					</li>
 					<li>
 						<span>
-							Implemented bug fixes, doc changes & enhancement. View all
-							contributions{" "}
-							<a
-								className="blueBox"
-								href="https://github.com/uber/deck.gl/issues?utf8=%E2%9C%93&q=assignee%3ANavneet-Sahota+"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								here
-							</a>
-							.
+							Implemented various other bug fixes, docs changes, enhancements
+							and helped create specs for future development via Github Issues.
+							<ul className="work" style={{ fontSize: "1em" }}>
+								<li>
+									<a
+										className="blueBox"
+										href="https://github.com/uber/deck.gl/issues?utf8=✓&q=assignee%3ANavneet-Sahota+"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										View all my contributions on Github.
+									</a>
+								</li>
+							</ul>
 						</span>
 					</li>
 				</ul>
 			</div>
 			<div className="work-container odd-work">
-				<WorkExTitle
-					company="Pesto Career Accelerator"
-					href="https://www.pesto.tech"
-					duration="Jul 2019 - Present"
-				/>
-				<ul className="work">
-					<li>
-						<span>
-							Learned web development best practices and skills required for
-							remote work.
-						</span>
-					</li>
-					<li>
-						<span>
-							Built a{" "}
-							<a
-								className="blueBox"
-								href="https://posto.netlify.com/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								markdown blogging application
-							</a>
-							.
-						</span>
-					</li>
-				</ul>
-			</div>
-			<div className="work-container even-work">
 				<WorkExTitle
 					jobTitle="Frontend Lead at"
 					company="Xane AI"
@@ -104,39 +83,100 @@ const Experience = () => {
 				<ul className="work">
 					<li>
 						<span>
-							Wrote <strong>custom webpack configuration</strong> which brought
-							down build size by ~70%
+							Wrote a custom{" "}
+							<a
+								className="blueBox"
+								href="https://webpack.js.org"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Webpack
+							</a>{" "}
+							configuration to reduce bundle size by ~70%.
 						</span>
 					</li>
 					<li>
 						<span>
-							Built an MVP app to scan, detect & provide voice & text based
-							information about different parts of a car for{" "}
-							<strong>Maruti Suzuki MAIL program (1st Runner-up).</strong>
+							Improved development experience by setting up ESLint, Prettier,
+							Husky, and Lint-staged.
 						</span>
 					</li>
 					<li>
 						<span>
-							Built a <strong>custom Typeform-like interface</strong> to conduct
-							intra-department surveys in UK, US, PH & India.
+							Heavily contributed to a custom{" "}
+							<a
+								className="blueBox"
+								href="https://reactjs.org"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								React
+							</a>{" "}
+							dashboard for{" "}
+							<a
+								className="blueBox"
+								href="https://jiva.com"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Jiva Ayurveda
+							</a>{" "}
+							used to track each of their 1,000+ employees’ sentiment to find
+							and resolve HR issues as early as possible.
 						</span>
 					</li>
 					<li>
 						<span>
-							Heavily contributed to <strong>custom dashboard</strong> to track
-							each employee’s sentiment, find and resolve issues as early as
-							possible.
+							Built a custom Typeform-like interface to conduct intra-department
+							surveys for{" "}
+							<a
+								className="blueBox"
+								href="https://www.firstsource.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								First Source
+							</a>
+							.
 						</span>
 					</li>
 					<li>
 						<span>
-							<strong>Improved Company’s development environment</strong> by
-							setting up eslint, prettier, husky, and lint-staged.
+							Built a custom PowerPoint Report generator using{" "}
+							<a
+								className="blueBox"
+								href="https://gitbrent.github.io/PptxGenJS/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								PptxGenJS
+							</a>
+							.
 						</span>
 					</li>
 					<li>
 						<span>
-							Built <strong>custom PPT Report generator.</strong>
+							Built an MVP{" "}
+							<a
+								className="blueBox"
+								href="https://facebook.github.io/react-native/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								React Native
+							</a>{" "}
+							app to scan, detect & provide voice & text-based information about
+							different parts of a car to win an enterprize services contract
+							from{" "}
+							<a
+								className="blueBox"
+								href="https://www.marutisuzuki.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Suzuki
+							</a>
+							.
 						</span>
 					</li>
 				</ul>
